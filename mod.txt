@@ -1,0 +1,25 @@
+{
+  "name" : "Contract Broker Search Fix",
+  "description" : "Make search update only when text changes",
+  "author" : "Animepdf",
+  "contact" : "dc @animepdf",
+  "version" : "1.0.0",
+  "priority" : 10,
+  "color" : "0 255 255",
+  "image" : "mod.png",
+  "disable_safe_mode" : false,
+  "vr_disabled" : false,
+  "desktop_disbled" : false,
+  "needs_restart" : false,
+  "hooks" : [
+    { "hook_id" : "lib/managers/menu/contractbrokergui", "script_path" : "mod.lua" }
+  ],
+  "updates": [
+  {
+    "identifier": "contract_broker_search_fix",
+    "host": {
+      "meta": "https://raw.githubusercontent.com/Anime-pdf/ContractBrokerSearchFix/main/meta.json"
+    }
+  }
+]
+}
